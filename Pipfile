@@ -7,12 +7,26 @@ verify_ssl = true
 pytest = "*"
 pytest-cov = "*"
 "pytest.cov" = "*"
+pytest-django = "*"
+django-debug-toolbar = "*"
+factory-boy = "*"
 
 [packages]
 awscli = "*"
 pandas = "*"
 xlrd = "*"
 pyarrow = "*"
+csci-utils = {editable = true, git = "https://github.com/dnmaster1/2020fa-csci-utils-dnmaster1"}
+django = "*"
+django-environ = "*"
+djangorestframework = "*"
+django-model-utils = "*"
+argon2-cffi = "*"
+django-allauth = "*"
+django-crispy-forms = "*"
+django-extensions = "*"
+coreapi = "*"
+pytest-cov = "*"
 
 [requires]
 python_version = "3.7"
