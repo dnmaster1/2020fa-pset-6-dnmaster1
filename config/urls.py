@@ -21,7 +21,7 @@ urlpatterns = [
         "yelp/",
         include(("yelp_reviews.urls", "yelp_reviews"), namespace="yelp_reviews"),
     ),
-    path("docs/", include_docs_urls(title="Pset 6 API")),
+    #path("docs/", include_docs_urls(title="Pset 6 API")),
     #path("yelp_reviews/",yelp_reviews.url),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

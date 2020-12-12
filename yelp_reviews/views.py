@@ -4,7 +4,7 @@ from django.shortcuts import render
 from rest_framework.viewsets import ModelViewSet, ViewSet
 
 from .models import DimDate, FactReview
-from .serializers import ByYearSerializer, DateSerializer, FactSerializer
+from .serializers import FactSerializer, DateSerializer, FactSerializer
 
 class DateViewSet(ModelViewSet):
     queryset = DimDate.objects.all()
@@ -12,4 +12,4 @@ class DateViewSet(ModelViewSet):
 
 class FactViewSet(ModelViewSet):
     queryset = FactReview.objects.all()
-    serializer_class = FactSerializera
+    serializer_class = FactSerializer

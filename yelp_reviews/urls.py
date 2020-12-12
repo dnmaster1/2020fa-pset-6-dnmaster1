@@ -1,9 +1,9 @@
-rom django.urls import include, path
+from django.urls import include, path
 from rest_framework.documentation import include_docs_urls
 from rest_framework.routers import DefaultRouter
 from rest_framework.schemas import get_schema_view
 
-from .views import ByYear, DateViewSet, FactViewSet, render_aggregation
+from .views import DateViewSet, FactViewSet
 
 router = DefaultRouter()
 
