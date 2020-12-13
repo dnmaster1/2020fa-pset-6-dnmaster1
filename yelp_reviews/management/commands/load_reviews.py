@@ -18,9 +18,9 @@ class Command(BaseCommand):
         # Store results into FactReview
         path = "yelp_reviews/YelpReviewCleansed/"
 
-        # filepaths = [ path + f for f in listdir(path) if f.endswith('.csv')]
-        # yr = pd.concat(map(pd.read_csv, filepaths))
-        yr = pd.read_csv(path+'00.csv')
+        filepaths = [ path + f for f in listdir(path) if f.endswith('.csv')]
+        yr = pd.concat(map(pd.read_csv, filepaths))
+        # yr = pd.read_csv(path+'00.csv')
         numcols  = ["funny","cool","useful","stars"]
         # yr['date'] = yr['date'].astype('datetime64[ns]')
         # yr.set_index('review_id',drop=True)

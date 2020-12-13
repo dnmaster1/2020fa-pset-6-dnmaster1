@@ -12,6 +12,7 @@ router = DefaultRouter()
 router.register(r'FactReview', FactViewSet, basename='FactReview')
 router.register(r'DimDate', DateViewSet, basename='DimDate')
 
+
 schema_view = get_schema_view(title="Yelp Review API")
 
 urlpatterns = [

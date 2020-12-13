@@ -17,7 +17,7 @@ stages:
 
 jobs:
   include:
-    - stage: test
+    - stage: tests
       script: pytest -v
       install:
         - pipenv install --dev --ignore-pipfile --deploy
