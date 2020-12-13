@@ -12,10 +12,9 @@ django-debug-toolbar = "*"
 factory-boy = "*"
 
 [packages]
-csci-utils = {editable = true, git = "https://github.com/csci-e-29/2020fa-csci-utils-dnmaster1"}
-#awscli = "*"
+awscli = "*"
 pandas = "*"
-#xlrd = "*"
+xlrd = "*"
 pyarrow = "*"
 django = "*"
 django-environ = "*"
@@ -27,6 +26,7 @@ django-crispy-forms = "*"
 django-extensions = "*"
 coreapi = "*"
 pytest-cov = "*"
+csci-utils = {editable = true, git = "https://github.com/csci-e-29/2020fa-csci-utils-dnmaster1"}
 
 [requires]
 python_version = "3.7"
