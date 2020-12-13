@@ -7,21 +7,26 @@ verify_ssl = true
 pytest = "*"
 pytest-cov = "*"
 "pytest.cov" = "*"
+pytest-django = "*"
+django-debug-toolbar = "*"
+factory-boy = "*"
 
 [packages]
-#awscli = "*"
-#pandas = "*"
-#xlrd = "*"
-#pyarrow = "*"
-luigi = "*"
-#torch = "*"
-#torchvision = "*"
-#boto3 = "*"
+awscli = "*"
+pandas = "*"
+xlrd = "*"
+pyarrow = "*"
+django = "*"
+django-environ = "*"
+djangorestframework = "*"
+django-model-utils = "*"
+argon2-cffi = "*"
+django-allauth = "*"
+django-crispy-forms = "*"
+django-extensions = "*"
+coreapi = "*"
+pytest-cov = "*"
 csci-utils = {editable = true, git = "https://github.com/csci-e-29/2020fa-csci-utils-dnmaster1"}
-dask = {extras = ["dataframe"], version = "*"}
-s3fs = "<0.3.5"
-fastparquet = "*"
-
 
 [requires]
 python_version = "3.7"
