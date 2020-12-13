@@ -42,7 +42,7 @@ class Command(BaseCommand):
             model = DimDate()
             model.date = row['date']
             model.save()
-        print(DimDate.objects.all()[0].date)
+        #print(DimDate.objects.all()[0].date)
 
         FactReview.objects.all().delete()
 
@@ -55,4 +55,3 @@ class Command(BaseCommand):
             model.useful = row['useful']
             model.cool = row['cool']
             model.save()
-
