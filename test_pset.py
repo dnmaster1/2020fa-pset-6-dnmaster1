@@ -5,11 +5,20 @@
 
 from django.test import TestCase
 from yelp_reviews.models import models, DimDate, FactReview
-
-from datetime import datetime, date
-
-
 import unittest
+from django.test import TestCase
+from yelp_reviews.models import FactReview, DimDate
+
+
+# Create your tests here.
+
+class SimpleDBTest(TestCase):
+    def test_basic_db(self):
+        print("simple test")
+        self.assertEqual(1+1,2)
+        a=FactReview.objects.all()
+        b=DimDate.objects.all()
+        self.assertEqual(a.count(),b.count())
 
 class SimpleTest:
     def test_basic_additions(self):
