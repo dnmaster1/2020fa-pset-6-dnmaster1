@@ -16,6 +16,7 @@ awscli = "*"
 pandas = "*"
 xlrd = "*"
 pyarrow = "*"
+csci-utils = {editable = true, git = "https://github.com/dnmaster1/2020fa-csci-utils-dnmaster1"}
 django = "*"
 django-environ = "*"
 djangorestframework = "*"
@@ -26,7 +27,6 @@ django-crispy-forms = "*"
 django-extensions = "*"
 coreapi = "*"
 pytest-cov = "*"
-csci-utils = {editable = true, git = "https://github.com/csci-e-29/2020fa-csci-utils-dnmaster1"}
 
 [requires]
 python_version = "3.7"

@@ -22,7 +22,6 @@ class Command(BaseCommand):
         yr = pd.concat(map(pd.read_csv, filepaths))
         numcols  = ["funny","cool","useful","stars"]
         yr.set_index('review_id', drop=True)
-        print(yr.dtypes)
         yr[numcols] = yr[numcols].fillna(0)
         yr.dropna()
         yr = yr[yr['user_id'] != None]
@@ -33,8 +32,6 @@ class Command(BaseCommand):
         yr_sum["count"] = yr.date.value_counts(dropna=True)
         yr_sum = yr_sum.reset_index()
         yr_sum[numcols] = yr_sum[numcols].astype(int)
-        yr_sum.dropna()
-        yr_sum.to_csv("yr_sum.csv", index=False, sep=',', encoding='utf-8')
         yr_sum.dropna()
 
         DimDate.objects.all().delete()
@@ -55,3 +52,4 @@ class Command(BaseCommand):
             model.useful = row['useful']
             model.cool = row['cool']
             model.save()
+
