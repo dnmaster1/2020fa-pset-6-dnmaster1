@@ -12,10 +12,10 @@ django-debug-toolbar = "*"
 factory-boy = "*"
 
 [packages]
-awscli = "*"
+#awscli = "*"
 pandas = "*"
-xlrd = "*"
-pyarrow = "*"
+#xlrd = "*"
+#pyarrow = "*"
 csci-utils = {editable = true, git = "https://github.com/csci-e-29/2020fa-csci-utils-dnmaster1"}
 django = "*"
 django-environ = "*"
