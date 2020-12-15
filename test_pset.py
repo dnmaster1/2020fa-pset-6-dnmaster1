@@ -13,6 +13,7 @@ import unittest
 
 class SimpleTest:
     def test_basic_additions(self):
+        print("Simpletest")
         self.assertEqual(1+1,2)
 
 class TestWithUnittest(unittest.TestCase):
