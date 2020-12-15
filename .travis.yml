@@ -18,7 +18,6 @@ stages:
   - test
   - name: answers
 
-
 jobs:
   include:
     - stage: test
